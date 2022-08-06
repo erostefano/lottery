@@ -1,10 +1,8 @@
 exports.log = (description, sheets, draws) => {
-    console.log(description);
-    console.log();
+    console.group(description);
 
     draws.forEach(draw => {
-        console.log(draw.date.toUTCString());
-        console.log();
+        console.group(draw.date.toUTCString());
 
         sheets.forEach(
             play => {
@@ -30,5 +28,7 @@ exports.log = (description, sheets, draws) => {
                 console.log();
             }
         )
+        console.groupEnd();
     })
+    console.groupEnd();
 }
