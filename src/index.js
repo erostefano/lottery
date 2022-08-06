@@ -6,11 +6,11 @@ let draws;
 // EuroMillion
 
 sheets = [
-    {numbers: [23, 30, 32, 39, 44], stars: [6, 7]}
+    {numbers: ['23', '30', '32', '39', '44'], stars: ['06', '07']}
 ];
 
 draws = [
-    {date: new Date('2022-08-05'), numbers: [3, 29, 33, 35, 44], stars: [8, 10]}
+    {date: new Date('2022-08-05'), numbers: ['03', '29', '33', '35', '44'], stars: ['08', '10']}
 ];
 
 logger.log('EuroMillion', sheets, draws);
@@ -18,12 +18,12 @@ logger.log('EuroMillion', sheets, draws);
 // SwissLotto
 
 sheets = [
-    {numbers: [4, 8, 14, 15, 21, 33], stars: [5]},
-    {numbers: [5, 14, 27, 31, 35, 36], stars: [4]}
+    {numbers: ['04', '08', '14', '15', '21', '33'], stars: ['05']},
+    {numbers: ['05', '14', '27', '31', '35', '36'], stars: ['04']}
 ];
 
 draws = [{
-    date: new Date('2022-08-03'), numbers: [15, 17, 21, 27, 35, 38], stars: [6]
+    date: new Date('2022-08-03'), numbers: ['15', '17', '21', '27', '35', '38'], stars: ['06']
 }];
 
 logger.log('SwissLotto', sheets, draws);
