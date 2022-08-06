@@ -2,27 +2,28 @@ exports.log = (description, sheets, draws) => {
     console.group(description);
 
     draws.forEach(draw => {
-        console.group(draw.date.toUTCString());
+        console.group(`${draw.date.getDate()}.${draw.date.getMonth() + 1}.${draw.date.getUTCFullYear()}`);
+        console.log(`Numbers: ${draw.numbers.join(' ')} Stars: ${draw.stars.join(' ')} \n`);
 
         sheets.forEach(
-            play => {
+            sheet => {
                 console.log(
                     'Numbers:',
-                    draw.numbers.join(' '),
+                    sheet.numbers.join(' '),
                     'Stars:',
-                    draw.stars.join(' ')
+                    sheet.stars.join(' ')
                 );
                 console.log(
                     'Numbers:',
-                    draw.numbers.map(number => {
+                    sheet.numbers.map(number => {
                         const underlines = [...number.toString()].map(_ => '_').join('');
                         const spaces = [...number.toString()].map(_ => ' ').join('');
 
-                        return play.numbers.includes(number) ? underlines : spaces;
+                        return draw.numbers.includes(number) ? underlines : spaces;
                     }).join(' '),
                     'Stars:',
-                    draw.stars.map(star => {
-                        return play.stars.includes(star) ? '_' : ' '
+                    sheet.stars.map(star => {
+                        return draw.stars.includes(star) ? '_' : ' '
                     }).join(' ')
                 );
                 console.log();
