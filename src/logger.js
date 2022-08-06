@@ -1,9 +1,12 @@
-exports.log = (plays, draws) => {
+exports.log = (description, sheets, draws) => {
+    console.log(description);
+    console.log();
+
     draws.forEach(draw => {
         console.log(draw.date.toUTCString());
         console.log();
 
-        plays.forEach(
+        sheets.forEach(
             play => {
                 console.log(
                     'Numbers:',

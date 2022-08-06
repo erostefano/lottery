@@ -2,7 +2,7 @@
   "name": "lotto",
   "version": "1.0.0",
   "scripts": {
-    "compare": "node src/compare.js"
+    "start": "node src/index.js"
   },
   "dependencies": {
   }
