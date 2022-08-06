@@ -14,14 +14,14 @@ exports.log = (description, sheets, draws) => {
                     sheet.stars.join(' ')
                 );
                 console.log(
-                    'Numbers:',
+                    '        ',
                     sheet.numbers.map(number => {
                         const underlines = [...number.toString()].map(_ => '_').join('');
                         const spaces = [...number.toString()].map(_ => ' ').join('');
 
                         return draw.numbers.includes(number) ? underlines : spaces;
                     }).join(' '),
-                    'Stars:',
+                    '      ',
                     sheet.stars.map(star => {
                         return draw.stars.includes(star) ? '_' : ' '
                     }).join(' ')
