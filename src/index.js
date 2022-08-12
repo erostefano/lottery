@@ -29,7 +29,10 @@ draws = [
     },
     {
         date: new Date('2022-08-06'), numbers: ['1', '2', '15', '18', '32', '40'], stars: ['06']
-    }
+    },
+    {
+        date: new Date('2022-08-10'), numbers: ['03', '04', '05', '10', '21', '35'], stars: ['5'],
+    },
 ];
 
 logger.log('SwissLotto', sheets, draws);
