@@ -13,6 +13,7 @@ draws = [
     {date: new Date('2022-08-05'), numbers: ['03', '29', '33', '35', '44'], stars: ['08', '10']},
     {date: new Date('2022-08-09'), numbers: ['18', '19', '21', '27', '47'], stars: ['05', '11']},
     {date: new Date('2022-08-12'), numbers: ['14', '17', '34', '35', '42'], stars: ['06', '10']},
+    {date: new Date('2022-08-16'), numbers: ['10', '14', '25', '32', '39'], stars: ['07', '08']},
 ];
 
 logger.log('EuroMillion', sheets, draws);
