@@ -15,6 +15,7 @@ draws = [
     {date: new Date('2022-08-12'), numbers: ['14', '17', '34', '35', '42'], stars: ['06', '10']},
     {date: new Date('2022-08-16'), numbers: ['10', '14', '25', '32', '39'], stars: ['07', '08']},
     {date: new Date('2022-08-19'), numbers: ['02', '09', '13', '19', '38'], stars: ['02', '06']},
+    {date: new Date('2022-08-23'), numbers: ['19', '26', '31', '39', '48'], stars: ['02', '03']},
 ];
 
 logger.log('EuroMillion', sheets, draws);
@@ -41,6 +42,9 @@ draws = [
     },
     {
         date: new Date('2022-08-17'), numbers: ['07', '08', '16', '19', '28', '36'], stars: ['04'],
+    },
+    {
+        date: new Date('2022-08-20'), numbers: ['01', '02', '07', '13', '28', '33'], stars: ['06'],
     },
 ];
 
